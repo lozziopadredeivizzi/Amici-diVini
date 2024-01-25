@@ -1,0 +1,9 @@
+body nav li:nth-child(2) a{
+    background-color: #A11524;
+    color: white
+}
+
+body nav li:nth-child(3) a{
+    background-color: transparent;
+    color: red;
+}

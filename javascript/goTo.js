@@ -4,6 +4,7 @@ const elemBackToHome = document.getElementById("backtohome");
 const elemBackToProfile = document.getElementById("backtoprofile");
 const elemGoToNotify = document.getElementById("gotonotify");
 const elemGoToFollowers = document.getElementById("followers");
+const elemViewProfile = document.getElementById("viewprofile");
 
 if (elemBackToProfile !== null) {
     elemBackToProfile.addEventListener("click", function () {
@@ -38,6 +39,12 @@ if (elemGoToNotify !== null) {
 if (elemGoToFollowers !== null) {
     elemGoToFollowers.addEventListener("click", function () {
         window.location.href = "followers.html";
+    })
+}
+
+if (elemViewProfile !== null) {
+    elemViewProfile.addEventListener("click", function () {
+        window.location.href = "userprofile.html";
     })
 }
 
