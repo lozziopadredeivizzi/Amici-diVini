@@ -159,3 +159,7 @@ body nav li:nth-child(3) a{
 main section:nth-child(2) tr td:hover{
     cursor: pointer;
 }
+
+#followers{
+    cursor: pointer;
+}

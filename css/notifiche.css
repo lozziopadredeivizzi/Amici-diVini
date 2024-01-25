@@ -17,9 +17,8 @@ body>header{
 body>header >h1{
     font-size: 150%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 30px;
-    padding-left: 20px;
-    margin-left: 30px;
+    padding-top: 28px;
+    padding-left: 50px;
 }
 
 body>header>img {

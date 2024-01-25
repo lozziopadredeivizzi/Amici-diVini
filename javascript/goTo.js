@@ -3,6 +3,7 @@ const elemEditProfile = document.getElementById("editprofile");
 const elemBackToHome = document.getElementById("backtohome");
 const elemBackToProfile = document.getElementById("backtoprofile");
 const elemGoToNotify = document.getElementById("gotonotify");
+const elemGoToFollowers = document.getElementById("followers");
 
 if (elemBackToProfile !== null) {
     elemBackToProfile.addEventListener("click", function () {
@@ -31,6 +32,12 @@ if (elemEditProfile !== null) {
 if (elemGoToNotify !== null) {
     elemGoToNotify.addEventListener("click", function () {
         window.location.href = "notifiche.html.";
+    })
+}
+
+if (elemGoToFollowers !== null) {
+    elemGoToFollowers.addEventListener("click", function () {
+        window.location.href = "followers.html";
     })
 }
 
