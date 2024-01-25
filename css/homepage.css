@@ -36,7 +36,6 @@ body>header>button{
     top: 0;
     right: 0;
     margin: 20px 80px 0px 0px;
-    color: #5f0d16;
 }
 
 article{
@@ -125,6 +124,7 @@ body>nav{
 }
 
 button{
+    color: #A11524;
     background-color: #a1152320;
     border: none;
     border-radius: 3px;

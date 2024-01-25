@@ -32,6 +32,7 @@ ul {
 }
 
 main>section:nth-child(1) img {
+    border-radius: 50%;
     width: 90px;
     float: left;
     margin: 0px 22px 10px 42px;

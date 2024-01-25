@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/inseriscipost.css" type="text/css">
+    <title>Inserisci nuovo post</title>
+</head>
+
+<body>
+    <header>
+        <button name="tornaProfilo" onclick="window.location.href='personalProfile.html'"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg></button>
+        <h1>Inserisci vino</h1>
+        <img src="./img/logo.png" alt="">
+    </header>
+    <main>
+        <aside>
+            <img src="./img/imgPost.png" alt="">
+        </aside>
+        <form action="POST">
+            <ul>
+                <li>
+                    <label for="nomeVinoNuovo">Nome Vino: </label><input type="text" id="nomeVinoNuovo" required>
+                </li>
+                <li>
+                    <label for="recensioneNuova">Recensione: </label><textarea name="recensioneNuova" id="recensioneNuova" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Valutazione</legend>
+                        <label for="1"><img src="./img/emptyglass.png" alt=""></label><input type="radio" id="1" name="Valutazione" hidden>
+                        <label for="2"><img src="./img/emptyglass.png" alt=""></label><input type="radio" id="2" name="Valutazione" hidden>
+                        <label for="3"><img src="./img/emptyglass.png" alt=""></label><input type="radio" id="3" name="Valutazione" hidden>
+                        <label for="4"><img src="./img/emptyglass.png" alt=""></label><input type="radio" id="4" name="Valutazione" hidden>
+                        <label for="5"><img src="./img/emptyglass.png" alt=""></label><input type="radio" id="5" name="Valutazione" hidden>
+                    </fieldset>
+                </li>
+                <li>
+                    <input type="submit" id="submit" name="submit" value="posta">
+                </li>
+            </ul>
+        </form>
+    </main>
+</body>
+
+</html>
