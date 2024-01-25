@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/modificaprofilo.css" type="text/css">
     <title>Document</title>
 </head>
+
 <body>
+
     <header>
         <button name="tornaProfilo" onclick="window.location.href='personalProfile.html'"><svg
                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
@@ -16,21 +20,26 @@
         <h1>Inserisci vino</h1>
         <img src="./img/logo.png" alt="">
     </header>
-    <aside>
-        <img src="./img/pfimg.png" alt="">
-    </aside>
-    <form action="POST">
-        <ul>
-            <li>
-                <label for="descrizione">Descrizione:</label><textarea name="descrizione" id="descrizione" cols="30" rows="10"></textarea>
-            </li>
-            <li>
-                <label for="infopersonali">Informazioni Personali:</label><textarea name="infopersonali" id="infopersonali" cols="30" rows="10"></textarea>
-            </li>
-            <li>
-                <input type="submit" name="modifica" id="modifica" value="Modifica">
-            </li>
-        </ul>
-    </form>
+    <main>
+        <aside>
+            <img src="./img/pfimg.png" alt="">
+        </aside>
+        <form action="POST">
+            <ul>
+                <li>
+                    <label for="descrizione">Descrizione:</label><textarea name="descrizione" id="descrizione" cols="30"
+                        rows="10" required></textarea>
+                </li>
+                <li>
+                    <label for="infopersonali">Informazioni Personali:</label><textarea name="infopersonali"
+                        id="infopersonali" cols="30" rows="10" required></textarea>
+                </li>
+                <li>
+                    <input type="submit" name="modifica" id="modifica" value="Modifica">
+                </li>
+            </ul>
+        </form>
+    </main>
 </body>
+
 </html>
