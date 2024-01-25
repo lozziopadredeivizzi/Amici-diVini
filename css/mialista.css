@@ -1,0 +1,129 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    margin-bottom: 80px;
+}
+
+body>header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #A11524;
+    z-index: 1;
+}
+
+body>header >h1{
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+body>header>img {
+    max-width: 80px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 0px;
+}
+
+body>nav{
+    position: fixed;
+    background-color: white;
+    border-top: 1px solid #A11524;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+h2{
+    font-size: 150%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+article{
+    background-color: #EFE9CF;
+    border-radius: 12px;
+    width: 400px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+article aside{
+    width: 15%; 
+    float: left;
+}
+
+article aside img{
+    max-width: 80px;
+    float: left;
+    margin-left: 10px;
+}
+
+article ul li{
+    list-style: none;
+}
+
+article section{
+    width: 50%;
+    text-align: left;
+}
+
+article section ul li img{
+    width: 20px;
+}
+
+article nav{
+    width: 105px;
+    text-align: center;
+    float: right;
+}
+
+article nav, article aside, article section{
+    display: inline-block;
+    vertical-align: top;
+}
+
+article nav button{
+    width: 50%;
+    margin: 6px 8px 6px 0px;
+}
+
+button{
+    background-color: #a1152320;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    background-color: #a1152355;
+}
+
+body nav a{
+    color: #f10019;
+}
+
+body nav a:hover{
+    color: #5f0d16;
+}
+
+body nav a:hover{
+    color: #5f0d16;
+}
+
+body nav li:nth-child(4) a{
+    background-color: #A11524;
+    color: white
+}
+
+article aside img:hover{
+    cursor: pointer;
+}
