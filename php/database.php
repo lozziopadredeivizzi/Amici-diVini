@@ -16,7 +16,7 @@ class DatabaseConnection {
 
     public function addNewUser($nome, $cognome, $dataDiNascita, $email, $username, $password){
         $stmt = $this->db->prepare("INSERT INTO utente (DataDiNascita, Password, Username, Email, Cognome, Nome VALUES (?,?,?,?,?,?)");
-        $stmt->bind_param("ssssss", $nome, $cognome, $dataDiNascita, $email, $username, $password );
+        $stmt->bind_param("ssssss", $dataDiNascita, $nome,  $cognome, $email, $username, $password );
         $stmt->execute();
 
     }
