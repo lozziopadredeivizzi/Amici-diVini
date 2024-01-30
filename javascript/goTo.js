@@ -5,6 +5,7 @@ const elemBackToProfile = document.getElementById("backtoprofile");
 const elemGoToNotify = document.getElementById("gotonotify");
 const elemGoToFollowers = document.getElementById("followers");
 const elemViewProfile = document.getElementById("viewprofile");
+const elemViewPosts = document.getElementById("gotoposts");
 
 if (elemBackToProfile !== null) {
     elemBackToProfile.addEventListener("click", function () {
@@ -45,6 +46,12 @@ if (elemGoToFollowers !== null) {
 if (elemViewProfile !== null) {
     elemViewProfile.addEventListener("click", function () {
         window.location.href = "userprofile.html";
+    })
+}
+
+if (elemViewPosts !== null) {
+    elemViewPosts.addEventListener("click", function () {
+        window.location.href = "myPosts.html";
     })
 }
 
