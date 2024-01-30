@@ -1,6 +1,6 @@
 <?php
 
-class DatabaseHelper {
+class DatabaseConnection {
     
     private $db;
     //Connection db
