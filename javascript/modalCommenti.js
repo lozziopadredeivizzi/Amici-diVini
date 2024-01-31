@@ -9,7 +9,11 @@ function createAndShowModalComments() {
                     <h5 class="modal-title">Commenti</h5>
                 </div>
                 <div class="modal-body">
-                    <textarea rows="4" cols="50" placeholder="Inserisci il tuo commento..."></textarea> 
+                    <form action = "" method = "POST">
+                        <label for="commento">Scrivi un commento:</label><textarea name="commento"
+                        id="commento" cols="50" rows="4" palceholder ="inserisci il tuo commento..." required ></textarea>
+                        <input type="submit" name="postacommento" id="postacommento" value="Commenta">
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
