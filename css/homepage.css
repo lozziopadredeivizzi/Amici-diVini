@@ -92,13 +92,10 @@ article nav button{
     margin: 6px 8px 6px 0px;
 }
 
-article nav button:first-child img{
-    width: 25px;
+article nav button svg{
+    margin-bottom: 2px;
 }
 
-article nav button:nth-child(2) svg{
-    margin-bottom: 5px;
-}
 
 body>main>section:nth-child(1){
     margin-bottom: 25px;
