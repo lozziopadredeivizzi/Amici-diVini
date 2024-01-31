@@ -76,10 +76,6 @@ article section{
     text-align: left;
 }
 
-article section ul li img{
-    width: 20px;
-}
-
 article nav{
     width: 105px;
     text-align: center;
@@ -123,8 +119,4 @@ body nav a:hover{
 body nav li:nth-child(4) a{
     background-color: #A11524;
     color: white
-}
-
-article aside img:hover{
-    cursor: pointer;
 }

@@ -4,7 +4,7 @@ const elemBackToHome = document.getElementById("backtohome");
 const elemBackToProfile = document.getElementById("backtoprofile");
 const elemGoToNotify = document.getElementById("gotonotify");
 const elemGoToFollowers = document.getElementById("followers");
-const elemViewProfile = document.getElementById("viewprofile");
+const elemViewProfile = document.querySelectorAll(".viewprofile");
 const elemViewPosts = document.querySelectorAll(".gotoposts");
 
 if (elemBackToProfile !== null) {
@@ -44,17 +44,20 @@ if (elemGoToFollowers !== null) {
 }
 
 if (elemViewProfile !== null) {
-    elemViewProfile.addEventListener("click", function () {
-        window.location.href = "userprofile.html";
+    elemViewProfile.forEach(function (button) {
+        button.addEventListener("click", function () {
+            window.location.href = "userprofile.html";
+        })
+
     })
 }
 
 if (elemViewPosts !== null) {
-    elemViewPosts.forEach(function(td){
-        td.addEventListener("click", function(){
+    elemViewPosts.forEach(function (td) {
+        td.addEventListener("click", function () {
             window.location.href = "myPosts.html";
         })
     })
-    
+
 }
 

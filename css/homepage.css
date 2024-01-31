@@ -149,3 +149,7 @@ article aside img:hover{
     cursor: pointer;
 }
 
+article h2{
+    cursor: pointer;
+}
+
