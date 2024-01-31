@@ -1,4 +1,4 @@
 <?php 
 require_once("database.php");
-$dbh = new DatabaseConnection ("localhost", "root", "", ,"amici diVini", 3306);
+$dbh = new DatabaseConnection ("localhost", "root", "", ,"amicidiVini", 3306);
 ?>

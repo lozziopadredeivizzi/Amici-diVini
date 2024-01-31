@@ -12,12 +12,18 @@ class DatabaseConnection {
         }
     }
 
+    
     //add a new user into db
 
     public function addNewUser($nome, $cognome, $dataDiNascita, $email, $username, $password){
         $stmt = $this->db->prepare("INSERT INTO utente (DataDiNascita, Password, Username, Email, Cognome, Nome VALUES (?,?,?,?,?,?)");
         $stmt->bind_param("ssssss", $dataDiNascita, $nome,  $cognome, $email, $username, $password );
         $stmt->execute();
+        if($stmt == TRUE){
+            echo "Registrazione effettuata con successo";
+        } else{
+            echo "Registrazione non effettuata";
+        }
 
     }
 
@@ -30,5 +36,5 @@ class DatabaseConnection {
         $result = $stmt->get_result();
         return $result->fetch_all(MYSQLI_ASSOC);
     }
-
+    
 }
