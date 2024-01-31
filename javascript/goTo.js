@@ -5,7 +5,7 @@ const elemBackToProfile = document.getElementById("backtoprofile");
 const elemGoToNotify = document.getElementById("gotonotify");
 const elemGoToFollowers = document.getElementById("followers");
 const elemViewProfile = document.getElementById("viewprofile");
-const elemViewPosts = document.getElementById("gotoposts");
+const elemViewPosts = document.querySelectorAll(".gotoposts");
 
 if (elemBackToProfile !== null) {
     elemBackToProfile.addEventListener("click", function () {
@@ -50,8 +50,11 @@ if (elemViewProfile !== null) {
 }
 
 if (elemViewPosts !== null) {
-    elemViewPosts.addEventListener("click", function () {
-        window.location.href = "myPosts.html";
+    elemViewPosts.forEach(function(td){
+        td.addEventListener("click", function(){
+            window.location.href = "myPosts.html";
+        })
     })
+    
 }
 
