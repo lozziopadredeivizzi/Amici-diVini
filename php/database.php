@@ -16,13 +16,27 @@ class DatabaseConnection {
     //add a new user into db
 
     public function addNewUser($nome, $cognome, $dataDiNascita, $email, $username, $password){
-        $stmt = $this->db->prepare("INSERT INTO utente (DataDiNascita, Password, Username, Email, Cognome, Nome VALUES (?,?,?,?,?,?)");
-        $stmt->bind_param("ssssss", $dataDiNascita, $nome,  $cognome, $email, $username, $password );
+        $stmt = $this->db->prepare("INSERT INTO utente (DataDiNascita, Password, Username, Email, Cognome, Nome) VALUES (?,?,?,?,?,?)");
+        $stmt->bind_param("ssssss", $dataDiNascita, $password, $username, $email, $cognome, $nome );
         $stmt->execute();
         if($stmt == TRUE){
             echo "Registrazione effettuata con successo";
         } else{
             echo "Registrazione non effettuata";
+        }
+
+    }
+
+    public function addNewProfile($username){
+        $string="";
+        $int=0;
+        $stmt = $this->db->prepare("INSERT INTO profilo (Username, InfoPersonali, Descrizione, AccountSeguiti, Amici, ViniInseriti) VALUES (?,?,?,?,?,?)");
+        $stmt->bind_param("sssiii", $username, $string, $string, $int, $int, $int );
+        $stmt->execute();
+        if($stmt == TRUE){
+            echo "Profilo effettuata con successo";
+        } else{
+            echo "Profilo non effettuata";
         }
 
     }
