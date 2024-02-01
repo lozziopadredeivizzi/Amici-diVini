@@ -11,12 +11,9 @@
 
     $dbh->addNewUser($signUp_name, $signUp_surname, $signUp_date, $signUp_email, $signUp_username, $signUp_password);
     $dbh->addNewProfile($signUp_username);
-    header('Location: ../modificaprofilo.html');
-   
-    /* $user = $dbh->login($signUp_username, $signUp_password);
     session_start();
-    $_SESSION["user"] = $user[0];
-    */
+    $_SESSION["username"] =$signUp_username;
+    header('Location: ../modificaprofilo.html');
 
 
 ?>

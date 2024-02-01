@@ -44,16 +44,21 @@ class DatabaseConnection {
     //login utente
 
     public function login($username, $password){
-        $stmt = $this->db->prepare("SELECT * FROM 'utente' WHERE Username=? AND Password=?");
+        $stmt = $this->db->prepare("SELECT * FROM utente WHERE Username=? AND Password=?");
+        if ($stmt === false){
+            die("Errore nella preparazione della query");
+        }
         $stmt->bind_param("ss", $username, $password);
         $stmt->execute();
         $result = $stmt->get_result();
-        return $result->fetch_all(MYSQLI_ASSOC);
+        $user = $result->fetch_assoc();
+        return $user;
+
     }
 
     //modifica profilo
     public function modifyProfile($descrizione, $infoPersonali){
-        $stmt = $this->db->prepare("UPDATE profilo SET Descrizione, InfoPersonali VALUE (?, ?) WHERE ");
+        $stmt = $this->db->prepare("UPDATE profilo SET Descrizione=? InfoPersonali=? WHERE  ");
         $stmt->bind_param("ss", $descrizione, $infoPersonali );
         $stmt->execute(); 
     }
