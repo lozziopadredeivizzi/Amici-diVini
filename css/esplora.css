@@ -93,7 +93,7 @@ article nav button{
 }
 
 article nav button svg{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 body>main>section:nth-child(1){
@@ -140,6 +140,10 @@ body nav li:nth-child(2) a{
 }
 
 article aside img:hover{
+    cursor: pointer;
+}
+
+article h2{
     cursor: pointer;
 }
 
