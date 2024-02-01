@@ -12,7 +12,7 @@ class DatabaseConnection {
         }
     }
 
-    
+
     //add a new user into db
 
     public function addNewUser($nome, $cognome, $dataDiNascita, $email, $username, $password){

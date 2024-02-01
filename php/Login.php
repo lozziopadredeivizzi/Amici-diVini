@@ -7,7 +7,6 @@
     $dbh->login($Login_username, $Login_password);
     $user = $dbh->login($Login_username, $Login_password);
     session_start();
-    $_SESSION["user"] = $user[0];
-    header('Location: ./homepage.html');
+    header('Location: ../homepage.html');
 
 ?>
