@@ -50,5 +50,12 @@ class DatabaseConnection {
         $result = $stmt->get_result();
         return $result->fetch_all(MYSQLI_ASSOC);
     }
+
+    //modifica profilo
+    public function modifyProfile($descrizione, $infoPersonali){
+        $stmt = $this->db->prepare("UPDATE profilo SET Descrizione, InfoPersonali VALUE (?, ?) WHERE ");
+        $stmt->bind_param("ss", $descrizione, $infoPersonali );
+        $stmt->execute(); 
+    }
     
 }
