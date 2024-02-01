@@ -1,5 +1,5 @@
 <?php
-    require_one("data_source.php");
+    require_once("data_source.php");
     
     $Login_username = $_POST["username"];
     $Login_password = $_POST["password"];
