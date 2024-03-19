@@ -34,10 +34,10 @@
             </div>
             <ul>
                 <li>
-                    Breve descrizione:
+                    Breve descrizione:  <?php echo ($descrizione); ?>
                 </li>
                 <li>
-                    Informazioni persoanli:
+                    Informazioni persoanli: <?php echo ($infoPersonali); ?>
                 </li>
             </ul>
         </section>
@@ -165,7 +165,7 @@
                 <a class="nav-link" href="esplora.html">Esplora</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="personalProfile.html">Profilo</a>
+                <a class="nav-link" aria-current="page" href="personalProfile.php">Profilo</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="mialista.html">Mia Lista</a>

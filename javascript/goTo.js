@@ -9,7 +9,7 @@ const elemViewPosts = document.querySelectorAll(".gotoposts");
 
 if (elemBackToProfile !== null) {
     elemBackToProfile.addEventListener("click", function () {
-        window.location.href = "personalProfile.html";
+        window.location.href = "personalProfile.php";
     })
 }
 
