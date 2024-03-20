@@ -7,7 +7,7 @@ session_start();
 $Login_username = $_POST["username"];
 $Login_password = $_POST["password"];
 
-$userID = $dbh->login($Login_username, $Login_password);
+$userID = $dbh->checkLogin($Login_username, $Login_password);
 
 if ($userID) {
     $_SESSION["username"] = $Login_username;
